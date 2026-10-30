@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Happy Birthday Karen! </title>
+	<!-- style sheet -->
+	<link href="css/main.css" rel="stylesheet">
+	<!-- Tab icon -->
+    <link rel="icon" href="../img/CJM.png">
+
+
+</head>
+	
+<body>
+	<main>
+		<header>
+			<img id="banner" src="img/banner.png" alt="banner">
+
+		</header>
+		<span id="items">
+			<img id="rightwing" src="img/rightwing.png" alt="wing">
+			<img id= "leftwing" src="img/leftwing.png" alt="wing">
+			<span id= "letter">
+				<a href="loading.html"><img id ="heart" src="img/heart.png" alt="heart"></a>
+				<img id="envelope" src="img/envelop.png" alt="letter">
+
+			</span>
+		</span>
+		<script>
+document.addEventListener("keydown", function (e) {
+    // Ctrl + U
+    if (e.ctrlKey && e.key === "u") {
+        e.preventDefault();
+        return false;
+    }
+
+    // Ctrl + Shift + I
+    if (e.ctrlKey && e.shiftKey && e.key === "I") {
+        e.preventDefault();
+        return false;
+    }
+
+    // Ctrl + Shift + C
+    if (e.ctrlKey && e.shiftKey && e.key === "C") {
+        e.preventDefault();
+        return false;
+    }
+
+    // F12
+    if (e.key === "F12") {
+        e.preventDefault();
+        return false;
+    }
+});
+</script>
+<script>
+document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+});
+</script>
+<script>
+setInterval(function () {
+    if (window.outerWidth - window.innerWidth > 160 ||
+        window.outerHeight - window.innerHeight > 160) {
+        document.body.innerHTML = "<h1>Akses diblokir</h1>";
+    }
+}, 1000);
+</script>
+	</main>
+	
+
+</body>
+</html>

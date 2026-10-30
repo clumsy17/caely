@@ -1,0 +1,45 @@
+/* Halaman pilihan setelah index: hanya Love Letter */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background: mistyrose;
+  overflow-x: hidden;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+#github {
+  display: block;
+  width: min(420px, 90vw);
+  line-height: 0;
+}
+
+#github_photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  padding: 0;
+  transition: transform 0.25s ease;
+}
+
+#github:hover #github_photo {
+  transform: translateY(-4px);
+}

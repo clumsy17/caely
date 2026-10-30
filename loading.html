@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Loading </title>
+	<!-- style sheet -->
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/load.css" rel="stylesheet">
+	<!-- Tab icon -->
+    <link rel="icon" href="../img/CJM.png">
+    <!-- Jquery -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+</head>
+	
+<body>
+	<main>
+		<!-- Satu-satunya pilihan setelah index: Love Letter -->
+		<a id="github" href="github.html" aria-label="Open Love Letter">
+			<img id="github_photo" src="img/github.png" alt="Love Letter">
+		</a>
+		<script>
+document.addEventListener("keydown", function (e) {
+    // Ctrl + U
+    if (e.ctrlKey && e.key === "u") {
+        e.preventDefault();
+        return false;
+    }
+
+    // Ctrl + Shift + I
+    if (e.ctrlKey && e.shiftKey && e.key === "I") {
+        e.preventDefault();
+        return false;
+    }
+
+    // Ctrl + Shift + C
+    if (e.ctrlKey && e.shiftKey && e.key === "C") {
+        e.preventDefault();
+        return false;
+    }
+
+    // F12
+    if (e.key === "F12") {
+        e.preventDefault();
+        return false;
+    }
+});
+</script>
+<script>
+document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+});
+</script>
+<script>
+setInterval(function () {
+    if (window.outerWidth - window.innerWidth > 160 ||
+        window.outerHeight - window.innerHeight > 160) {
+        document.body.innerHTML = "<h1>Akses diblokir</h1>";
+    }
+}, 1000);
+</script>
+	</main>
+	
+
+	<!-- Javascript -->
+	<script src="js/loading.js"> 
+	</script>
+
+</body>
+</html>

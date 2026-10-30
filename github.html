@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Hi Caely! </title>
+	<!-- style sheet -->
+	<link href="css/github.css" rel="stylesheet">
+	<!-- Tab icon -->
+    <link rel="icon" href="../img/CJM.png">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
+
+
+
+</head>
+	
+<body>
+	<main>
+  <div id="front">
+    <img id="front-title" src="img/Love.png" alt="love">
+    <img id="front-pic" src="img/Octocat.png" alt="octopuss">
+    <p>
+      Click to open keyyy!
+    </p>
+  </div>
+
+  
+  <div id="inside">
+    <span id="inside-recipient">
+     Happy Birthday to someone who carries sunshine wherever she goes. ✨
+    </span>
+
+    <p id="message">
+      <br>
+You have this beautiful way of making everything feel a little brighter. Your cheerful spirit, positive energy, and the happiness you effortlessly spread to everyone around you are truly something special.
+<br>
+I hope you never lose that beautiful light within you. May life always be kind to you, may your days be filled with endless reasons to smile, and may all the happiness you bring into other people's lives find its way back to you, a thousand times over.
+<br>
+I'm genuinely grateful that our paths crossed and that I had the chance to meet you and get to know you. Some people come into our lives without even realizing how much joy they bring, and you're one of those rare people.
+<br>
+You may never know just how much your presence is appreciated, but I hope you always remember how wonderful you are.
+<br>
+Keep shining, keep smiling, and keep being the beautiful soul that you are.
+<br>
+Wishing you nothing but happiness, love, and all the beautiful things life has to offer. Happy Birthday Karen! 🤍
+<br>
+
+    </p>
+    <p id="inside-sender">
+      love, <br>
+      lucxxs
+    </p>
+    <audio id="myAudio" autoplay>
+			<source src="./song.mp3" type="audio/ogg">
+			<source src="./song.mp3" type="audio/mpeg">
+		  </audio>
+		  
+		  <p>
+			<button onclick="playAudio()">Play Audio</button>
+			<button onclick="pauseAudio()">Pause Audio</button>
+		  </p>
+		  
+		  <script>
+			function playAudio() {
+			  var audio = document.getElementById("myAudio");
+			  audio.play();
+			}
+		  
+			function pauseAudio() {
+			  var audio = document.getElementById("myAudio");
+			  audio.pause();
+			}
+		  </script>
+  </div>
+  </main>
+
+ <!-- Javascript -->
+	<script src="js/github.js"></script>
+</body>
+</html>
